@@ -132,6 +132,33 @@ body {
 	bottom: 0;
 }
 
+.button-up {
+	background-color: var(--accent-light);
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-family: var(--nunito-sans);
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--dark);
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+.button-up:hover {
+	background-color: var(--accent-dark);
+}
+
+.button-up.hidden {
+	opacity: 0;
+	cursor: default;
+}
+
+.button-up.visible {
+	opacity: 1;
+}
 /* Hero */
 /* _______________________________________________________________________ */
 
@@ -247,9 +274,10 @@ body {
 }
 
 .banner-btn {
-	width: 170px;
+	display: block;
+	max-width: 170px;
 	background-color: var(--accent-light);
-	padding: 20px 10px;
+	padding: 20px 0;
 	border-radius: 5px;
 	font-family: var(--nunito-sans);
 	font-weight: 700;
