@@ -2,10 +2,13 @@
 
 a {
 	text-decoration: none;
+	transition: 0.2s;
 }
 
 button {
 	border: none;
+	cursor: pointer;
+	transition: 0.2s;
 }
 
 h1,
@@ -289,6 +292,12 @@ body {
 	background-size: 14px 10px;
 	background-position: 89% center;
 	flex-basis: 279px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.menu-sorting:hover {
+	background-color: rgba(var(--dark-rgba), 0.1);
 }
 
 .menu-box {
@@ -401,11 +410,20 @@ body {
 	gap: 9px;
 }
 
+.footer-link:hover {
+	color: var(--accent-light);
+}
+
 .footer-link {
 	display: block;
 	font-size: 15px;
 	line-height: 160%;
 	color: rgba(var(--light-rgb), 0.9);
+}
+
+.footer-link:hover {
+	color: var(--accent-light);
+	transition: 0.2s;
 }
 
 .footer-list {
@@ -436,4 +454,9 @@ body {
 	line-height: 190%;
 	text-transform: uppercase;
 	color: var(--accent-light);
+	transition: 0.2s;
+}
+
+.footer-tel:hover {
+	color: var(--accent-dark);
 }
