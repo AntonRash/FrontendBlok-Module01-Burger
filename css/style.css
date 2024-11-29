@@ -43,6 +43,7 @@ body {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	box-sizing: border-box;
 }
 
 /* Header */
@@ -54,7 +55,8 @@ body {
 .header-wrapper {
 	display: flex;
 	align-items: center;
-	gap: 196px;
+	/* gap: 196px; */
+	gap: 56px;
 	padding-top: 26px;
 	padding-bottom: 26px;
 }
@@ -65,13 +67,14 @@ body {
 	height: 56px;
 	background-image: url(../img/logo/logo.svg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 .nav {
-	/* flex-grow: 1; */
+	flex-grow: 1;
 	display: flex;
 	gap: 47px;
+	margin-left: min(10vw, 140px);
 }
 
 .nav-link {
