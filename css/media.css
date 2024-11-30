@@ -1,3 +1,17 @@
+:root {
+	--nunito-sans: "Nunito", sans-serif;
+	--open-sans: "Open Sans", sans-serif;
+
+	--accent-light: #fbb731;
+	--accent-dark: #f37335;
+	--dark: #443737;
+	--light: #ffffff;
+	--line: #dedede;
+	--light-rgb: 255, 255, 255;
+	--dark-rgba: 68, 55, 55;
+	--tr: 0.2s;
+}
+
 @media (max-width: 1080px) {
 	.header-wrapper {
 		gap: 40px;
@@ -63,5 +77,64 @@
 	.footer-tel._mobile {
 		display: block;
 		text-align: left;
+	}
+}
+
+@media (max-width: 730px) {
+	.header-wrapper {
+		gap: 21px;
+		padding-top: 19px;
+		padding-bottom: 19px;
+	}
+	.nav {
+		display: none;
+	}
+	.nav._modal {
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-link::after {
+		display: none;
+	}
+	.nav-link:hover::after {
+		display: none;
+	}
+	.burger-menu {
+		display: block;
+	}
+	.logo {
+		width: 116px;
+		height: 37px;
+		flex-grow: 1;
+	}
+	.modal {
+		width: 100%;
+		max-width: 500px;
+		box-sizing: border-box;
+		background-color: #fff8dc;
+		padding: 40px 15px;
+		position: absolute;
+		top: -400px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+		transition: var(--tr);
+	}
+	.nav._modal.nav-link {
+		padding-bottom: 23px;
+	}
+	.modal-close {
+		display: block;
+		width: 22px;
+		height: 22px;
+		background-image: url(../img/close\ 1.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: transparent;
+		border: none;
+		position: absolute;
+		top: 20px;
+		right: 20px;
 	}
 }

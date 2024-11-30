@@ -32,6 +32,8 @@ h6 {
 	--line: #dedede;
 	--light-rgb: 255, 255, 255;
 	--dark-rgba: 68, 55, 55;
+
+	--tr: 0.2s;
 }
 body {
 	font-family: var(--open-sans);
@@ -59,6 +61,17 @@ body {
 	gap: 56px;
 	padding-top: 26px;
 	padding-bottom: 26px;
+}
+
+.burger-menu {
+	display: none;
+	width: 34px;
+	height: 22px;
+	background-image: url(../img/burger-menu.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	border: none;
 }
 
 .logo {
