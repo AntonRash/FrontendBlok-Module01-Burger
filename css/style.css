@@ -350,6 +350,7 @@ body {
 	width: 100%;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 22px;
 }
 
 .menu-thumb img {
@@ -362,15 +363,11 @@ body {
 	object-fit: cover;
 }
 
-.menu-item {
-}
-
 .menu-name {
 	font-weight: 600;
 	font-size: 30px;
 	line-height: 127%;
 	text-align: center;
-	margin-top: 22px;
 }
 .price {
 	font-weight: 700;
@@ -423,6 +420,7 @@ body {
 .footer-wrapper {
 	display: flex;
 	justify-content: space-between;
+	gap: 12.5px;
 }
 .footer-logo {
 	display: block;
@@ -483,8 +481,24 @@ body {
 	color: rgba(var(--light-rgb), 0.9);
 }
 
+.footer-item:last-child {
+	flex-basis: 195px;
+}
+
 .footer-tel {
 	display: block;
+	font-family: var(--nunito-sans);
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 190%;
+	text-transform: uppercase;
+	color: var(--accent-light);
+	transition: 0.2s;
+	text-align: right;
+}
+
+.footer-tel._mobile {
+	display: none;
 	font-family: var(--nunito-sans);
 	font-weight: 800;
 	font-size: 20px;
