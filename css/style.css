@@ -90,6 +90,10 @@ body {
 	margin-left: min(10vw, 140px);
 }
 
+.modal {
+	display: none;
+}
+
 .nav-link {
 	color: var(--dark);
 	font-weight: 600;
@@ -387,7 +391,7 @@ body {
 	font-size: 20px;
 	text-align: center;
 	color: rgba(var(--dark-rgba), 0.5);
-	margin-top: 5px;
+	margin-top: 10px;
 }
 .menu-btn::before {
 	content: "";
